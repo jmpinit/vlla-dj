@@ -49,6 +49,6 @@ if __name__ == "__main__":
     play_shader(defaultShader)
 
     global shader
-    #shader = Popen(["vlla-shader", fragShader])
+    shader = Popen(["vlla-shader", fragShader])
 
     app.run()
