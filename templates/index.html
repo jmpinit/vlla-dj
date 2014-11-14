@@ -28,7 +28,7 @@ $def with (shaders)
 
             <h2>SHADERS</h2>
             <table class="table">
-                $for shader in shaders:<tr><td><button><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button></td><td><a type="text" href="/static/shaders/$shader">$shader</a></td></tr>
+                $for shader in shaders:<tr><td><button onclick="play('$shader')"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button></td><td><a type="text" href="/static/shaders/$shader">$shader</a></td></tr>
             </table>
         </div>
 
@@ -36,5 +36,7 @@ $def with (shaders)
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/static/js/bootstrap.min.js"></script>
+
+        <script src="/static/js/control.js"></script>
     </body>
 </html>
